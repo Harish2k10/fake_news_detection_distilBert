@@ -69,6 +69,12 @@ Or run interactively:
 python src/predict.py
 ```
 
+
+## Results (on LIAR dataset)
+
+* Validation Accuracy: 63.8%
+* Validation F1 Score: 0.63
+
 ## Speed Tips
 
 * Reduce sequence length: set `max_len=128` in `preprocess.py` for faster training
