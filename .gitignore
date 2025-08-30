@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.env
+
+# Data & Models
+data/*.csv
+data/*.tsv
+models/
+!data/.gitkeep
+!models/.gitkeep
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
