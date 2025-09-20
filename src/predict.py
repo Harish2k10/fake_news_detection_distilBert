@@ -17,7 +17,7 @@ def predict(text, model_path="models/best_model"):
         outputs = model(**inputs)
         prediction_id = torch.argmax(outputs.logits, dim=1).item()
 
-    # Prefer saved id2label mapping if available
+
     id2label = getattr(model.config, 'id2label', None)
     if isinstance(id2label, dict) and prediction_id in id2label:
         return id2label[prediction_id]
@@ -25,7 +25,7 @@ def predict(text, model_path="models/best_model"):
     return "FAKE" if prediction_id == 0 else "REAL"
 
 
-# finalise one method and  comment the other
+
 import sys
 
 if __name__ == "__main__":
